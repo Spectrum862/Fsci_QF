@@ -1,2 +1,11 @@
 # FSci_SE_project
-this project is parts of CSS321 Software Engineering I and CSS322 Software Engineering II.
+this project is parts of Software Engineering subject.
+
+this project requires...
+1. python 3.X.X
+2. npm (automatically installed in 'nodejs' installation)
+
+# Usage
+```bash
+python manage.py runserver
+```
