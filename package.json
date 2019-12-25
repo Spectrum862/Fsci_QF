@@ -4,7 +4,7 @@
   "description": "this project is parts of Software Engineering subject.",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development ./QFmanager/frontend/src/index.js --output ./QFmanager/frontend/static/frontend/main.js",
+    "dev": "webpack --mode development --watch ./QFmanager/frontend/src/index.js --output ./QFmanager/frontend/static/frontend/main.js",
     "build": "webpack --mode development ./QFmanager/frontend/src/index.js --output ./QFmanager/frontend/static/frontend/main.js"
   },
   "repository": {

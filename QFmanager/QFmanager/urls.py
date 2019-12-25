@@ -3,5 +3,6 @@ from django.urls import path, include
 
 # create urls
 urlpatterns = [
-    path('', include('students.urls')),
+    path('', include('frontend.urls')),
+    path('', include('students.urls'))
 ]
