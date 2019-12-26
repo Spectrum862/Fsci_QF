@@ -17,7 +17,7 @@ or run
 npm run build
 ```
 for the production.
-on the command prompt.
+on the command prompt.  
 2. open a new command prompt, move to project directory(root), and run
 ```bash
 python manage.py runserver
