@@ -1,4 +1,4 @@
-# FSci_SE_project
+# QFSci project
 This project is parts of Software Engineering subject.
 Faculty of Science, King Mongkut's University of Technology Thonburi (KMUTT).
 
