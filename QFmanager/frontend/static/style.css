@@ -1,3 +1,8 @@
 body {
-    background-color: #AAFFD7; /*#99F2C8*/
+    background: #2cac89;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #005063, #197a67, #2cac89);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #005063, #197a67, #2cac89); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#qflogo{
+    width: 3%;
 }
