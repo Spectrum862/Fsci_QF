@@ -11,7 +11,17 @@ class App extends React.Component {
     render() {
         return (
             <Fragment>
-                <img id="qffulllogo" src="..\static\QFLOGO-1.png"></img>
+                <div className="login">
+                    <img id="qffulllogo" src="..\static\QFLOGO-1.png"></img>
+                    <form>
+                        <input type="text" name="username" placeholder="USERNAME" maxlength="11"></input>
+                        <br></br>
+                        <input type="password" name="password" placeholder="PASSWORD"></input>
+                        <br></br>
+                        <button type="submit" id="loginbtn"><strong>LOG IN</strong></button>
+                    </form>
+                    <p>HAVE A PROBLEM? CONTACT US.</p>
+                </div>
             </Fragment>
         );
     }
@@ -28,9 +38,19 @@ class App extends React.Component {
 */
 
 /*
-<form>
-    <button type="submit" className="loginbtn">LOG IN</button>
-</form>
+<img id="qffulllogo" src="..\static\QFLOGO-1.png"></img>
+<div className="login">
+    <form>
+        <input type="text" name="username" placeholder="USERNAME" maxlength="11"></input>
+        <br></br>
+        <input type="password" name="password" placeholder="PASSWORD"></input>
+        <br></br>
+        <button type="submit" id="loginbtn"><strong>LOG IN</strong></button>
+    </form>
+    <p>HAVE A PROBLEM? CONTACT US.</p>
+</div>
 */
+
+
 
 ReactDOM.render(<App />, document.getElementById("app"));

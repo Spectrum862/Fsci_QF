@@ -1,35 +1,122 @@
-html{
+@font-face {
+    font-family: 'nexa';
+    src: url('nexa_light-webfont.woff2') format('woff2'),
+        url('nexa_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nexa';
+    src: url('nexa_bold-webfont.woff2') format('woff2'),
+        url('nexa_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'prompt';
+    src: url('prompt-light-webfont.woff2') format('woff2'),
+        url('prompt-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'prompt';
+    src: url('prompt-semibold-webfont.woff2') format('woff2'),
+        url('prompt-semibold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'prompt-thin';
+    src: url('prompt-thin-webfont.woff2') format('woff2'),
+        url('prompt-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
     height: 100%;
 }
 
-#qflogo {
-    width: 5%;
+body {
+    font-family: 'nexa' , 'prompt', sans-serif;
 }
 
-#qffulllogo {
-    margin: 0;
+/* log in */
+
+.login {
+    color: #ffffff;
+    width: 25%;
+    font-size: 1vw;
+    height: fit-content;
     position: absolute;
+    text-align: center;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    letter-spacing: 0.1em;
 }
 
-.loginbtn{
+.login input[type=text], .login input[type=password] {
+    width: 100%;
+    color: #ffffff;
+    padding-top: 0.4em;
+    padding-left: 0.7em;
+    padding-bottom: 0.4em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #9c9c9c;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin-bottom: 1em;
+    letter-spacing: 0.15em;
+}
+
+.login input[type=text]::placeholder, .login input[type=password]::placeholder {
+    color: #ffffff;
+}
+
+.login input[type=text]:focus, .login input[type=password]:focus {
+    border-bottom: 3px solid #ffffff;
+    transition-timing-function: ease;
+}
+
+#loginbtn {
     background-color: #ffffff;
     color: #005063;
-    width: 5%;
-    padding: 0.3em;
+    letter-spacing: 0.05em;
+    width: fit-content;
+    padding-top: 0.7em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 0.6em;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
+    margin-bottom: 0.5em;
+    text-align: center;
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
+    cursor: pointer;
 }
-.loginbtn:hover{
-    background-color: #2cac89;
-    color: #ffffff;
+
+#loginbtn:hover {
+    background-color: #8cffbb;
+    color: #000000;
+}
+
+#qffulllogo{
+    width: 65%;
+}
+
+#qflogo {
+    width: 5%;
 }
 
 @media only screen and (orientation: landscape) {
@@ -43,15 +130,57 @@ html{
         background-attachment: fixed;
     }
 
-    @media only screen and (min-height: 700px){
-        #qffulllogo{
-            width: 17.5%;
+    @media only screen and (max-width: 575.98px) {
+        .login {
+            width: 35%;
+            font-size: 1.8vw;
+        }
+    
+        #qffulllogo {
+            width: 75%;
         }
     }
 
-    @media only screen and (max-height: 699px){
-        #qffulllogo{
-            width: 20%;
+    @media only screen and (min-width: 576px) and (max-width: 767.98px) {
+        .login {
+            width: 32.5%;
+            font-size: 1.6vw;
+        }
+    
+        #qffulllogo {
+            width: 70%;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+        .login {
+            width: 30%;
+            font-size: 1.4vw;
+        }
+    
+        #qffulllogo {
+            width: 70%;
+        }
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+        .login {
+            width: 27.5%;
+            font-size: 1.2vw;
+        }
+
+        #qffulllogo {
+            width: 75%;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .login {
+            width: 25%;
+        }
+
+        #qffulllogo {
+            width: 80%;
         }
     }
 }
@@ -67,15 +196,58 @@ html{
         background-attachment: fixed;
     }
 
-    @media only screen and (max-width: 699px){
-        #qffulllogo{
-            width: 45%;
+    @media only screen and (max-width: 575.98px) {
+        .login {
+            width: 65%;
+            font-size: 1.5vh;
+        }
+    
+        #qffulllogo {
+            width: 75%;
         }
     }
 
-    @media only screen and (min-width: 700px){
-        #qffulllogo{
-            width: 35%;
+    @media only screen and (min-width: 576px) and (max-width: 767.98px) {
+        .login {
+            width: 50%;
+            font-size: 1.8vh;
+        }
+    
+        #qffulllogo {
+            width: 75%;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+        .login {
+            width: 50%;
+            font-size: 1.7vh;
+        }
+    
+        #qffulllogo {
+            width: 70%;
+        }
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+        .login {
+            width: 50%;
+            font-size: 1.6vh;
+        }
+
+        #qffulllogo {
+            width: 75%;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .login {
+            width: 50%;
+            font-size: 1.4vh;
+        }
+
+        #qffulllogo {
+            width: 80%;
         }
     }
 }
