@@ -5,9 +5,13 @@ This project is parts of CSS321 and CSS322 Software Engineering subjects,  which
 This project requires...
 1. python 3.6.X or later version
 2. npm (install 'node.js', then 'npm' will be  automatically installed)
+and uses...
+1. React Native
+2. Redux
+3. Django framework
 
 ## Usage
-1. open a command prompt, move from root directory to 'QFmanager' directory  and **run**
+open a command prompt, move from root directory to 'QFmanager' directory  and **run** this following code on the command prompt.
 ```bash
 npm run dev
 ```
@@ -17,8 +21,7 @@ or run
 npm run build
 ```
 for the production.
-on the command prompt.  
-2. *open a new command prompt*, move to project directory(root), and **run**
+*open a new command prompt*, move to project directory(root), and **run**
 ```bash
 python manage.py runserver
 ```

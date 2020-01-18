@@ -11,10 +11,7 @@ class App extends React.Component {
     render() {
         return (
             <Fragment>
-            <Header />
-                <div className="container">
-                    
-                </div>
+                <img id="qffulllogo" src="..\static\QFLOGO-1.png"></img>
             </Fragment>
         );
     }
@@ -29,4 +26,11 @@ class App extends React.Component {
     </Fragment>
 </Provider>
 */
+
+/*
+<form>
+    <button type="submit" className="loginbtn">LOG IN</button>
+</form>
+*/
+
 ReactDOM.render(<App />, document.getElementById("app"));

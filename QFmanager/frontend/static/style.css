@@ -1,8 +1,81 @@
-body {
-    background: #2cac89;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #005063, #197a67, #2cac89);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #005063, #197a67, #2cac89); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+html{
+    height: 100%;
 }
-#qflogo{
-    width: 3%;
+
+#qflogo {
+    width: 5%;
+}
+
+#qffulllogo {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.loginbtn{
+    background-color: #ffffff;
+    color: #005063;
+    width: 5%;
+    padding: 0.3em;
+    border: none;
+    border-radius: 20px;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.loginbtn:hover{
+    background-color: #2cac89;
+    color: #ffffff;
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        background: #2cac89;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #005063, #197a67, #2cac89);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #005063, #197a67, #2cac89); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    @media only screen and (min-height: 700px){
+        #qffulllogo{
+            width: 17.5%;
+        }
+    }
+
+    @media only screen and (max-height: 699px){
+        #qffulllogo{
+            width: 20%;
+        }
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    body {
+        background: #2cac89;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #005063, #197a67, #2cac89);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #005063, #197a67, #2cac89); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    @media only screen and (max-width: 699px){
+        #qffulllogo{
+            width: 45%;
+        }
+    }
+
+    @media only screen and (min-width: 700px){
+        #qffulllogo{
+            width: 35%;
+        }
+    }
 }
