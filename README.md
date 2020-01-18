@@ -1,4 +1,4 @@
-# QFSci project
+# FSci Qualification Framework(QF) Project
 This project is parts of CSS321 and CSS322 Software Engineering subjects,  which cooperate with Faculty of Science of King Mongkut's University of Technology Thonburi (KMUTT).
 
 ## Installation
