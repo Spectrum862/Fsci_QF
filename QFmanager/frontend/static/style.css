@@ -15,40 +15,28 @@
     font-style: normal;
 }
 
-/* Prompt font for TH*/
-@font-face {
-    font-family: 'prompt';
-    src: url('prompt-light-webfont.woff2') format('woff2'),
-        url('prompt-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'prompt';
-    src: url('prompt-semibold-webfont.woff2') format('woff2'),
-        url('prompt-semibold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-/* placeholder in TH*/
-@font-face {
-    font-family: 'prompt-thin';
-    src: url('prompt-thin-webfont.woff2') format('woff2'),
-        url('prompt-thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 html {
     height: 100%;
 }
 
 /* set the EN-TH font */
 body {
-    font-family: 'nexa' , 'prompt', sans-serif;
+    font-family: 'nexa' , 'Prompt', sans-serif;
 }
+
+/* CSS grid */
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
 
 /* log in page */
 .login {
@@ -83,6 +71,21 @@ body {
 
 .login input[type=text]::placeholder, .login input[type=password]::placeholder {
     color: #ffffff;
+    opacity: 50%;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+.login input[type=text]:hover::placeholder, .login input[type=password]:hover::placeholder {
+    color: #ffffff;
+    opacity: 100%;
+}
+
+.login input[type=text]:focus::placeholder, .login input[type=password]:focus::placeholder {
+    color: #ffffff;
+    opacity: 100%;
 }
 
 /* log in's button */
@@ -136,6 +139,132 @@ body {
 .contactlink:active {
     color: #005063;
     text-decoration: none;
+}
+
+/* navbar */
+.qfnavbar {
+    color: #ffffff;
+    font-size: 1vw;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+.qfnavbar p {
+    margin: 1vw;
+    text-align: center;
+}
+
+.qfnavbar a {
+    color: #ffffff;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+.qfnavbar a:hover {
+    color: #52ffdc;
+    text-decoration: none;
+}
+
+/* input in the navbar */
+.qfnavbar input[type=text] {
+    width: 100%;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    letter-spacing: 0.05em;
+}
+
+.qfnavbar input[type=text]::placeholder {
+    color: #ffffff;
+    opacity: 50%;
+}
+
+
+/* the menu in the main page */
+.menu {
+    color: #ffffff;
+    width: 100%;
+    height: fit-content;
+    font-size: 1.5vw;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* a paragraph in menu */
+.menu p {
+    margin: 1vw;
+}
+
+/* 'for an advisor & an officer' p */
+.menu .forwho {
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+
+/* non-underlining link */
+.menu a {
+    text-decoration: none;
+}
+
+/* QF logo in the main page */
+.menu #qffulllogo {
+    width: 50%;
+}
+
+/* menu bar */
+.menubar {
+    background-color: #ffffff;
+    color: #005063;
+    padding: 1vw;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.menubar:hover {
+    /*background-color: #197a67;*/
+    background-color: transparent;
+    color: #ffffff;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.menubar:active {
+    background-color: #52ffdc;
+    color: #ffffff;
+}
+
+#qflogo {
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* log out link */
+#logout:hover {
+    color: #ff0000;
 }
 
 /* responsive in a lanscape orientation */
@@ -207,6 +336,8 @@ body {
         #qffulllogo {
             width: 80%;
         }
+
+
     }
 }
 
