@@ -7,4 +7,4 @@ from students.models import Student
 class StudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Student
-        field = '__all__'
+        fields = '__all__'

@@ -14,13 +14,13 @@ class App extends React.Component {
                 <div className="login">
                     <img id="qffulllogo" src="..\static\QFLOGO-1.png"></img>
                     <form>
-                        <input type="text" name="username" placeholder="USERNAME" maxlength="11"></input>
+                        <input type="text" name="username" placeholder="USERNAME" maxLength="20"></input>
                         <br></br>
                         <input type="password" name="password" placeholder="PASSWORD"></input>
                         <br></br>
                         <button type="submit" id="loginbtn"><strong>LOG IN</strong></button>
                     </form>
-                    <p>HAVE A PROBLEM? CONTACT US.</p>
+                    HAVE A PROBLEM? <a className="contactlink" href="">CONTACT US</a>.
                 </div>
             </Fragment>
         );
