@@ -24,23 +24,6 @@ body {
     font-family: 'nexa' , 'Prompt', sans-serif;
 }
 
-/* CSS additional grid */
-.col-05 { width: 4.165%; }
-
-/* log in page */
-.login {
-    color: #ffffff;
-    width: 25%;
-    font-size: 1vw;
-    height: fit-content;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    letter-spacing: 0.1em;
-}
-
 /* log in's input */
 .login input[type=text], .login input[type=password] {
     width: 100%;
@@ -56,6 +39,20 @@ body {
     transition: 0.5s;
     margin-bottom: 1em;
     letter-spacing: 0.15em;
+}
+
+/* log in page */
+.login {
+    color: #ffffff;
+    width: 25%;
+    font-size: 1vw;
+    height: fit-content;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.1em;
 }
 
 .login input[type=text]::placeholder, .login input[type=password]::placeholder {
@@ -89,11 +86,11 @@ body {
     border-radius: 25px;
     margin-bottom: 0.5em;
     text-align: center;
+    cursor: pointer;
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    cursor: pointer;
 }
 
 #loginbtn:hover {
@@ -133,154 +130,7 @@ body {
     text-decoration: none;
 }
 
-/* navbar */
-.qfnavbar {
-    color: #ffffff;
-    font-size: 1vw;
-    -webkit-transition-duration: 0.25s;
-    -moz-transition-duration: 0.25s;
-    -o-transition-duration: 0.25s;
-    transition-duration: 0.25s;
-}
 
-.qfnavbar p {
-    margin: 0.75vw;
-    text-align: center;
-}
-
-.qfnavbar a {
-    color: #ffffff;
-    -webkit-transition-duration: 0.25s;
-    -moz-transition-duration: 0.25s;
-    -o-transition-duration: 0.25s;
-    transition-duration: 0.25s;
-}
-
-.qfnavbar a:hover {
-    color: #52ffdc;
-    text-decoration: none;
-}
-
-.qfnavbar input[type=text] {
-    width: 100%;
-    color: #ffffff;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 3px solid #ffffff;
-    opacity: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    letter-spacing: 0.05em;
-}
-
-.qfnavbar input[type=text]::placeholder {
-    color: #ffffff;
-}
-
-.qfnavbar input[type=text]:hover {
-    opacity: 100%;
-}
-
-.qfnavbar input[type=text]:focus {
-    opacity: 100%;
-}
-
-.qfnavbar input[type=text]:focus::placeholder {
-    opacity: 50%;
-}
-
-#qflogo {
-    height: 70%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* log out button in navbar */
-#logout p{
-    padding: 0.5em;
-    border-radius: 2em;
-    -webkit-transition-duration: 0.35s;
-    -moz-transition-duration: 0.35s;
-    -o-transition-duration: 0.35s;
-    transition-duration: 0.35s;
-}
-
-#logout p:hover{
-    background-color: #ffa8a8;
-    color: #555555;
-}
-
-.home {
-    background-color: #ffffff;
-    color: #555555;
-    font-size: 1vw;
-}
-
-/* the menu in the main page */
-/*
-.menu {
-    color: #ffffff;
-    width: 100%;
-    height: fit-content;
-    font-size: 1.5vw;
-    padding: 0;
-    position: absolute;
-    text-align: center;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.menu p {
-    margin: 1vw;
-}
-
-.menu .forwho {
-    margin-top: 0;
-    margin-bottom: 1vw;
-}
-
-.menu a {
-    text-decoration: none;
-}
-
-.menu #qffulllogo {
-    width: 50%;
-}
-
-.menubar {
-    background-color: #ffffff;
-    color: #005063;
-    padding: 1vw;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-}
-
-.menubar:hover {
-    background-color: transparent;
-    color: #ffffff;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-}
-
-.menubar:active {
-    background-color: #52ffdc;
-    color: #ffffff;
-}
-*/
-/* ----------------------------------------------------------------------------------------------------------*/
 
 /* responsive in a lanscape orientation */
 @media only screen and (orientation: landscape) {
