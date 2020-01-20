@@ -130,26 +130,6 @@ body {
     text-decoration: none;
 }
 
-/* header and navbar*/
-.qfheader {
-    color: #ffffff;
-    background-color: #379c84;
-}
-
-.qfnavbar {
-    color: #005063;
-    background-color: #ffffff;
-    height: 10%;
-    font-size: 2.25vh;
-    font-weight: lighter;
-    text-align: center;
-    padding: 0;
-}
-
-.qfnavbar [class*="col-"]{
-    padding: 0;
-}
-
 /* responsive in a lanscape orientation */
 @media only screen and (orientation: landscape) {
     body {

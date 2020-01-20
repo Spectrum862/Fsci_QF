@@ -11,7 +11,19 @@ class App extends React.Component {
     render() {
         return (
             <Fragment>
-                
+                <div className="qfheader">
+                    <p>Hello, world</p>
+                </div>
+                <div className="qfnavbar fixed-bottom">
+                    <div className="row">
+                        <div className="col-6">
+                            <a>หน้าแรก</a>
+                        </div>
+                        <div className="col-6">
+                            <a>ค้นหากิจกรรม</a>
+                        </div>
+                    </div>
+                </div>
             </Fragment>
         );
     }
