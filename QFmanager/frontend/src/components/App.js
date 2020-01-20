@@ -11,17 +11,28 @@ class App extends React.Component {
     render() {
         return (
             <Fragment>
-                <div className="login">
-                    <img id="qffulllogo" src="..\static\QFLOGO-1.png"></img>
-                    <form>
-                        <input type="text" name="username" placeholder="USERNAME" maxLength="20"></input>
-                        <br></br>
-                        <input type="password" name="password" placeholder="PASSWORD"></input>
-                        <br></br>
-                        <button type="submit" id="loginbtn"><strong>LOG IN</strong></button>
-                    </form>
-                    HAVE A PROBLEM? <a className="contactlink" href="">CONTACT US</a>.
+                <div className="qfnavbar">
+                    <div className="row col-12">
+                        <div className="col-1"></div>
+                        <div className="col-2">
+                            <a href="#"><img id="qflogo" src="..\static\QFLOGO-0.png"></img></a>
+                        </div>
+                        <div className="col-1"></div>
+                        <div className="col-4">
+                            <form>
+                                <input type="text" name="search" placeholder="Search an activity"></input>
+                            </form>
+                        </div>
+                        <div className="col-1"></div>
+                        <div className="col-05"></div>
+                        <div className="col-1">
+                            <a id="logout" href="#"><p>log out</p></a>
+                        </div>
+                        <div className="col-05"></div>
+                        <div className="col-1"></div>
+                    </div>
                 </div>
+                
             </Fragment>
         );
     }
@@ -42,9 +53,8 @@ class App extends React.Component {
     <img id="qffulllogo" src="..\static\QFLOGO-1.png"></img>
     <form>
         <input type="text" name="username" placeholder="USERNAME" maxLength="20"></input>
-        <br></br>
         <input type="password" name="password" placeholder="PASSWORD"></input>
-        <br></br>
+        <p className="erralert">[error alert text]</p>
         <button type="submit" id="loginbtn"><strong>LOG IN</strong></button>
     </form>
     HAVE A PROBLEM? <a className="contactlink" href="">CONTACT US</a>.
@@ -54,20 +64,23 @@ class App extends React.Component {
 /*
 <div className="qfnavbar">
     <div className="row col-12">
-        <div className="col-4">
+        <div className="col-1"></div>
+        <div className="col-2">
             <a href="#"><img id="qflogo" src="..\static\QFLOGO-0.png"></img></a>
         </div>
+        <div className="col-1"></div>
         <div className="col-4">
             <form>
                 <input type="text" name="search" placeholder="Search an activity"></input>
             </form>
         </div>
-        <div className="col-2">
-            <a href="#"><p>Firstname Lastname</p></a>
-        </div>
+        <div className="col-1"></div>
+        <div className="col-05"></div>
         <div className="col-1">
             <a id="logout" href="#"><p>log out</p></a>
         </div>
+        <div className="col-05"></div>
+        <div className="col-1"></div>
     </div>
 </div>
 <div className="menu col-4">

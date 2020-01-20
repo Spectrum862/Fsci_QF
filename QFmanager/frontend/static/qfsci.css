@@ -24,19 +24,8 @@ body {
     font-family: 'nexa' , 'Prompt', sans-serif;
 }
 
-/* CSS grid */
-.col-1 { width: 8.33%; }
-.col-2 { width: 16.66%; }
-.col-3 { width: 25%; }
-.col-4 { width: 33.33%; }
-.col-5 { width: 41.66%; }
-.col-6 { width: 50%; }
-.col-7 { width: 58.33%; }
-.col-8 { width: 66.66%; }
-.col-9 { width: 75%; }
-.col-10 { width: 83.33%; }
-.col-11 { width: 91.66%; }
-.col-12 { width: 100%; }
+/* CSS additional grid */
+.col-05 { width: 4.165%; }
 
 /* log in page */
 .login {
@@ -79,13 +68,11 @@ body {
 }
 
 .login input[type=text]:hover::placeholder, .login input[type=password]:hover::placeholder {
-    color: #ffffff;
     opacity: 100%;
 }
 
 .login input[type=text]:focus::placeholder, .login input[type=password]:focus::placeholder {
-    color: #ffffff;
-    opacity: 100%;
+    opacity: 50%;
 }
 
 /* log in's button */
@@ -97,7 +84,7 @@ body {
     padding-top: 0.7em;
     padding-left: 1.5em;
     padding-right: 1.5em;
-    padding-bottom: 0.6em;
+    padding-bottom: 0.55em;
     border: none;
     border-radius: 25px;
     margin-bottom: 0.5em;
@@ -122,6 +109,11 @@ body {
     width: 65%;
 }
 
+/* log in error's alert */
+.erralert {
+    color: #ff8a8a;
+}
+
 /* contact link */
 .contactlink {
     color: #ffffff;
@@ -132,7 +124,7 @@ body {
 }
 
 .contactlink:hover {
-    color: #8cffbb;
+    color: #8cdeff;
     text-decoration: none;
 }
 
@@ -152,7 +144,7 @@ body {
 }
 
 .qfnavbar p {
-    margin: 1vw;
+    margin: 0.75vw;
     text-align: center;
 }
 
@@ -169,7 +161,6 @@ body {
     text-decoration: none;
 }
 
-/* input in the navbar */
 .qfnavbar input[type=text] {
     width: 100%;
     color: #ffffff;
@@ -177,6 +168,7 @@ body {
     border: none;
     outline: none;
     border-bottom: 3px solid #ffffff;
+    opacity: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -188,11 +180,51 @@ body {
 
 .qfnavbar input[type=text]::placeholder {
     color: #ffffff;
+}
+
+.qfnavbar input[type=text]:hover {
+    opacity: 100%;
+}
+
+.qfnavbar input[type=text]:focus {
+    opacity: 100%;
+}
+
+.qfnavbar input[type=text]:focus::placeholder {
     opacity: 50%;
 }
 
+#qflogo {
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* log out button in navbar */
+#logout p{
+    padding: 0.5em;
+    border-radius: 2em;
+    -webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+    -o-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+}
+
+#logout p:hover{
+    background-color: #ffa8a8;
+    color: #555555;
+}
+
+.home {
+    background-color: #ffffff;
+    color: #555555;
+    font-size: 1vw;
+}
 
 /* the menu in the main page */
+/*
 .menu {
     color: #ffffff;
     width: 100%;
@@ -207,28 +239,23 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* a paragraph in menu */
 .menu p {
     margin: 1vw;
 }
 
-/* 'for an advisor & an officer' p */
 .menu .forwho {
     margin-top: 0;
     margin-bottom: 1vw;
 }
 
-/* non-underlining link */
 .menu a {
     text-decoration: none;
 }
 
-/* QF logo in the main page */
 .menu #qffulllogo {
     width: 50%;
 }
 
-/* menu bar */
 .menubar {
     background-color: #ffffff;
     color: #005063;
@@ -240,7 +267,6 @@ body {
 }
 
 .menubar:hover {
-    /*background-color: #197a67;*/
     background-color: transparent;
     color: #ffffff;
     -webkit-transition-duration: 0.5s;
@@ -253,19 +279,8 @@ body {
     background-color: #52ffdc;
     color: #ffffff;
 }
-
-#qflogo {
-    height: 70%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* log out link */
-#logout:hover {
-    color: #ff0000;
-}
+*/
+/* ----------------------------------------------------------------------------------------------------------*/
 
 /* responsive in a lanscape orientation */
 @media only screen and (orientation: landscape) {
