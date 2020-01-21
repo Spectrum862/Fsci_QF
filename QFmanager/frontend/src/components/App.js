@@ -12,15 +12,19 @@ class App extends React.Component {
         return (
             <Fragment>
                 <div className="qfheader">
-                    <p>Hello, world</p>
+                    <div className="row col-12">
+                        <div className="col-1">
+                            <img className="profilepic" src="..\static\IMG_8139.jpg"></img>
+                        </div>
+                    </div>
                 </div>
                 <div className="qfnavbar fixed-bottom">
                     <div className="row">
                         <div className="col-6">
-                            <a>หน้าแรก</a>
+                            <a className="qfnavlink" href="#"><img className="icon_home" src="..\static\homeactive.svg"></img><br></br>หน้าแรก</a>
                         </div>
                         <div className="col-6">
-                            <a>ค้นหากิจกรรม</a>
+                            <a className="qfnavlink" href="#"><img className="icon_s_activity" src="..\static\QFactive_.svg"></img><br></br>ค้นหากิจกรรม</a>
                         </div>
                     </div>
                 </div>
@@ -53,25 +57,21 @@ class App extends React.Component {
 */
 
 /*
-<div className="qfnavbar">
+<div className="qfheader">
     <div className="row col-12">
-        <div className="col-1"></div>
-        <div className="col-2">
-            <a href="#"><img id="qflogo" src="..\static\QFLOGO-0.png"></img></a>
-        </div>
-        <div className="col-1"></div>
-        <div className="col-4">
-            <form>
-                <input type="text" name="search" placeholder="Search an activity"></input>
-            </form>
-        </div>
-        <div className="col-1"></div>
-        <div className="col-05"></div>
         <div className="col-1">
-            <a id="logout" href="#"><p>log out</p></a>
+            <img className="profilepic" src="..\static\IMG_8139.jpg"></img>
         </div>
-        <div className="col-05"></div>
-        <div className="col-1"></div>
+    </div>
+</div>
+<div className="qfnavbar fixed-bottom">
+    <div className="row">
+        <div className="col-6">
+            <a className="qfnavlink" href="#"><img className="icon_home" src="..\static\homeactive.svg"></img><br></br>หน้าแรก</a>
+        </div>
+        <div className="col-6">
+            <a className="qfnavlink" href="#"><img className="icon_s_activity" src="..\static\QFactive_.svg"></img><br></br>ค้นหากิจกรรม</a>
+        </div>
     </div>
 </div>
 */

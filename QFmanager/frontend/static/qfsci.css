@@ -134,32 +134,69 @@ body {
 .qfheader {
     color: #ffffff;
     background-color: #379c84;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1em;
+    border-radius: 5em;
+}
+
+.profilepic {
+    border-radius: 50%;
+    border: 0.1em solid #ffffff;
+    width: 2em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    margin-left: -0.2em;
 }
 
 .qfnavbar {
-    color: #005063;
+    color: #000000;
     background-color: #ffffff;
-    height: 10%;
-    font-size: 2.25vh;
+    height: 9%;
+    font-size: 1.75vh;
     font-weight: lighter;
     text-align: center;
     padding: 0;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .qfnavbar [class*="col-"]{
     padding: 0;
 }
 
+.qfnavlink {
+    color: #000000;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+.icon_home, .icon_s_activity {
+    height: 3.5em;
+    padding-top: 0.4em;
+}
+
+.qfnavlink:hover, .qfnavlink:focus{
+    color: #000000;
+    text-decoration: none;
+    filter: invert(47%) sepia(89%) saturate(274%) hue-rotate(115deg) brightness(94%) contrast(92%);
+}
+
 /* responsive in a lanscape orientation */
 @media only screen and (orientation: landscape) {
     body {
-        background: #2cac89;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #005063, #197a67, #2cac89);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #005063, #197a67, #2cac89); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #2cac89;  
+        background: -webkit-linear-gradient(to right, #005063, #197a67, #2cac89); 
+        background: linear-gradient(to right, #005063, #197a67, #2cac89);
         height: 100%;
         margin: 0;
         background-repeat: no-repeat;
         background-attachment: fixed;
+    }
+
+    body {
+        background-color: #f1f1f1;
     }
 
     /* for extra small devices */
@@ -226,15 +263,22 @@ body {
 
 /* responsive in a portrait orientation */
 @media only screen and (orientation: portrait) {
+    /*
     body {
-        background: #2cac89;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to top, #005063, #197a67, #2cac89);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to top, #005063, #197a67, #2cac89); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #2cac89;
+        background: -webkit-linear-gradient(to top, #005063, #197a67, #2cac89); 
+        background: linear-gradient(to top, #005063, #197a67, #2cac89);
         height: 100%;
         margin: 0;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
+    */
+    
+    body {
+        background-color: #f1f1f1;
+    }
+    
 
     /* for extra small devices */
     @media only screen and (max-width: 575.98px) {
