@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# student's information model
+# student model
 class Student(models.Model):
     studentID = models.CharField(max_length = 11, unique = True)
     firstname = models.CharField(max_length = 100)

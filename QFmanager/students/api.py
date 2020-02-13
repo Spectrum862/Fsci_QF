@@ -5,8 +5,8 @@ from .serializers import StudentSerializer
 # Student Viewset
 class StudentViewSet(viewsets.ModelViewSet):
     permission_classes = [
-        permissions.IsAuthenticated
-        # permissions.AllowAny
+        # permissions.IsAuthenticated
+        permissions.AllowAny
     ]
 
     serializer_class = StudentSerializer
