@@ -11,5 +11,5 @@ class Student(models.Model):
     department = models.CharField(max_length = 100)
     field_of_study = models.CharField(max_length = 100)
     GPAX = models.DecimalField(max_digits = 3, decimal_places = 2)
-    owner = models.ForeignKey(User, related_name = "students", on_delete = models.CASCADE, null = True)
+    #owner = models.ForeignKey(User, related_name = "students", on_delete = models.CASCADE, null = True)
     # isn't done yet
