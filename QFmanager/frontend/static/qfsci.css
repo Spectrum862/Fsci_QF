@@ -24,6 +24,20 @@ body {
     font-family: 'nexa' , 'Prompt', sans-serif;
 }
 
+/* log in page */
+.login {
+    color: #ffffff;
+    width: 25%;
+    font-size: 1vw;
+    height: fit-content;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.1em;
+}
+
 /* log in's input */
 .login input[type=text], .login input[type=password] {
     width: 100%;
@@ -41,20 +55,6 @@ body {
     letter-spacing: 0.15em;
 }
 
-/* log in page */
-.login {
-    color: #ffffff;
-    width: 25%;
-    font-size: 1vw;
-    height: fit-content;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    letter-spacing: 0.1em;
-}
-
 .login input[type=text]::placeholder, .login input[type=password]::placeholder {
     color: #ffffff;
     opacity: 50%;
@@ -68,8 +68,13 @@ body {
     opacity: 100%;
 }
 
+.login input[type=text]:focus, .login input[type=password]:focus {
+    letter-spacing: 0em;
+}
+
 .login input[type=text]:focus::placeholder, .login input[type=password]:focus::placeholder {
     opacity: 50%;
+    letter-spacing: 0.15em;
 }
 
 /* log in's button */
