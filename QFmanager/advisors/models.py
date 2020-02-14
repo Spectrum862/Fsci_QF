@@ -5,7 +5,7 @@ class Advisor(models.Model):
 
     # isn't done yet
 
-    AdvisorID = models.CharField(max_length = 30, unique = True)
+    AdvisorID = models.CharField(max_length = 30, unique = True, primary_key = True)
     academic_rank = models.CharField(max_length = 20)
     firstname = models.CharField(max_length = 100)
     lastname = models.CharField(max_length = 100)
