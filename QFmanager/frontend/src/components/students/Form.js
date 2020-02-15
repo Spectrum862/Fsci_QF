@@ -28,17 +28,29 @@ export class Form extends Component {
         const { studentID, firstname, lastname, gender, degree_of_study, year_of_study, faculty, department, field_of_study, GPAX } = this.state;
         const student = { studentID, firstname, lastname, gender, degree_of_study, year_of_study, faculty, department, field_of_study, GPAX };
         this.props.addStudent(student);
+        this.setState({
+            studentID: '',
+            firstname: '',
+            lastname: '',
+            gender: '',
+            degree_of_study: '',
+            year_of_study: '',
+            faculty: '',
+            department: '',
+            field_of_study: '',
+            GPAX: ''
+        });
     }
 
     render() {
         const { studentID, firstname, lastname, gender, degree_of_study, year_of_study, faculty, department, field_of_study, GPAX } = this.state;
         return (
             <div className="card card-body mt-4 mb-4">
-                <h2>Add Lead</h2>
+                <h2>Add Student</h2>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Student ID</label>
-                        <input className="form-control" type="text" name="studentID" maxlength="11" onChange={this.onChange} value={studentID}/>
+                        <input className="form-control" type="text" name="studentID" pattern=".{11,11}" maxLength="11" onChange={this.onChange} value={studentID}/>
                     </div>
                     <div className="form-group">
                         <label>Firstname</label>

@@ -1,3 +1,5 @@
 export const GET_STUDENTS = "GET_STUDENTS";
-export const DELETE_STUDENT = "DELETE_STUDENT";
 export const ADD_STUDENT = "ADD_STUDENT";
+export const DELETE_STUDENT = "DELETE_STUDENT";
+export const GET_ERRORS = "GET_ERRORS";
+export const CREATE_MESSAGE = "CREATE_MESSAGE";
