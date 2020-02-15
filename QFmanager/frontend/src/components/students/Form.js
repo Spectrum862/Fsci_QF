@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-export class Act_hr_stat extends Component {
+export class Form extends Component {
     render() {
         return (
             <div>
-                <h2>Activity Hour Status</h2>
+                <h1>Add Student Form</h1>
             </div>
         )
     }
 }
 
-export default Act_hr_stat;
+export default Form;

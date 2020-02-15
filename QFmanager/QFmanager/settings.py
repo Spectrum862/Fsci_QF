@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'advisors',
     'officers',
     'students',
-    'rest_framework',
-    'frontend'
+    'frontend',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [

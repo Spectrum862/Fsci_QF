@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-export class Evaluation_form extends Component {
+export class Students extends Component {
     render() {
         return (
             <div>
-                <h2>Evaluate your own QF</h2>
+                <h1>Students List</h1>
             </div>
         )
     }
 }
 
-export default Evaluation_form;
+export default Students;
