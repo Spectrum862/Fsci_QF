@@ -16,6 +16,15 @@ export class Alerts extends Component {
             if (error.msg.studentID) {
                 alert.error(`Student ID: ${error.msg.studentID.join()}`);
             }
+            if (error.msg.AdvisorID) {
+                alert.error(`Advisor ID: ${error.msg.AdvisorID.join()}`);
+            }
+            if (error.msg.officerID) {
+                alert.error(`Officer ID: ${error.msg.officerID.join()}`);
+            }
+            if (error.msg.academic_rank) {
+                alert.error(`Academic Rank: ${error.msg.academic_rank.join()}`);
+            }
             if (error.msg.firstname) {
                 alert.error(`Firstname: ${error.msg.firstname.join()}`);
             }
@@ -43,11 +52,18 @@ export class Alerts extends Component {
             if (error.msg.GPAX) {
                 alert.error(`GPAX: ${error.msg.GPAX.join()}`);
             }
+            if (error.msg.year_advisor) {
+                alert.error(`Year advisor: ${error.msg.year_advisor.join()}`);
+            }
         }
 
         if(message !== prevProps.message){
             if (message.deleteStudent) alert.success(message.deleteStudent);
             if (message.addStudent) alert.success(message.addStudent);
+            if (message.deleteAdvisor) alert.success(message.deleteAdvisor);
+            if (message.addAdvisor) alert.success(message.addAdvisor);
+            if (message.deleteOfficer) alert.success(message.deleteOfficer);
+            if (message.addOfficer) alert.success(message.addOfficer);
         }
     }
 

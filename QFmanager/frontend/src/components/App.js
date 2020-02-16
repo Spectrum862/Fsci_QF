@@ -6,6 +6,8 @@ import AlertTemplate from 'react-alert-template-basic';
 
 import Header from './layout/Header';
 import StudentsDashboard from './students/StudentsDashboard';
+import AdvisorsDashboard from './advisors/AdvisorsDashboard';
+import OfficersDashboard from './officers/OfficersDashboard';
 import Alerts from './layout/Alerts';
 
 import { Provider } from "react-redux";
@@ -28,6 +30,12 @@ class App extends Component {
                         <Alerts />
                         <div className = "container">
                             <StudentsDashboard />
+                        </div>
+                        <div className = "container">
+                            <AdvisorsDashboard />
+                        </div>
+                        <div className = "container">
+                            <OfficersDashboard />
                         </div>
                     </Fragment>
                 </AlertProvider>

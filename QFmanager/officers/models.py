@@ -10,4 +10,4 @@ class Officer(models.Model):
     lastname = models.CharField(max_length = 100)
     gender = models.CharField(max_length = 6)
     faculty = models.CharField(max_length = 100)
-    department = models.CharField(max_length = 100) # 'no' as none
+    department = models.CharField(max_length = 100) # 'None' as none
