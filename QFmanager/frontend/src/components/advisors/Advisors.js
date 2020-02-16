@@ -42,7 +42,7 @@ export class Advisors extends Component {
                                 <td>{advisor.gender}</td>
                                 <td>{advisor.faculty}</td>
                                 <td>{advisor.department}</td>
-                                <td>{advisor.year_advisor}</td>
+                                <td>{advisor.year_advisor === 0 ? 'No' : advisor.year_advisor}</td>
                                 <td><button onClick = {this.props.deleteAdvisor.bind(this, advisor.AdvisorID)} className = "btn btn-danger btn-sm">Delete</button></td>
                             </tr>
                         )) }
