@@ -1,7 +1,7 @@
 import axios from 'axios';
-import { createMessage } from './messages';
+import { createMessage, returnErrors } from './messages';
 
-import { GET_ADVISORS, DELETE_ADVISOR, ADD_ADVISOR, GET_ERRORS } from './types';
+import { GET_ADVISORS, DELETE_ADVISOR, ADD_ADVISOR } from './types';
 
 // GET ADVISORS
 export const getAdvisors = () => dispatch => {
@@ -11,7 +11,7 @@ export const getAdvisors = () => dispatch => {
                 type: GET_ADVISORS,
                 payload: res.data
             })
-        }).catch(err => console.log(err));
+        }).catch(err => dispatch(returnErrors(err.response.data, err.response.status)));
 };
 
 // ADD ADVISOR
@@ -23,16 +23,7 @@ export const addAdvisor = advisor => dispatch => {
                 type: ADD_ADVISOR,
                 payload: res.data
             })
-        }).catch(err => {
-            const errors = {
-                msg: err.response.data,
-                status: err.response.status
-            }
-            dispatch({
-                type: GET_ERRORS,
-                payload: errors
-            });
-        });
+        }).catch(err => dispatch(returnErrors(err.response.data, err.response.status)));
 };
 
 // DELETE ADVISOR

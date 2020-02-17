@@ -1,7 +1,7 @@
 import axios from 'axios';
-import { createMessage } from './messages';
+import { createMessage, returnErrors } from './messages';
 
-import { GET_OFFICERS, DELETE_OFFICER, ADD_OFFICER, GET_ERRORS } from './types';
+import { GET_OFFICERS, DELETE_OFFICER, ADD_OFFICER } from './types';
 
 // GET OFFICERS
 export const getOfficers = () => dispatch => {
@@ -11,7 +11,7 @@ export const getOfficers = () => dispatch => {
                 type: GET_OFFICERS,
                 payload: res.data
             });
-        }).catch(err => console.log(err));
+        }).catch(err => dispatch(returnErrors(err.response.data, err.response.status)));
 }
 
 // ADD OFFICER
@@ -23,16 +23,7 @@ export const addOfficer = officer => dispatch => {
                 type: ADD_OFFICER,
                 payload: res.data
             });
-        }).catch(err => {
-            const errors = {
-                msg: err.response.data,
-                status: err.response.status
-            }
-            dispatch({
-                type: GET_ERRORS,
-                payload: errors
-            });
-        });
+        }).catch(err => dispatch(returnErrors(err.response.data, err.response.status)));
 }
 
 // DELETE OFFICER
