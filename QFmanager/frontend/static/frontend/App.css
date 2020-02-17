@@ -1,0 +1,21 @@
+.profilebg{
+    background-image:url('./pic/profileBG.jpg');
+    border-radius: 65px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    padding: 0.5rem;
+}
+
+.propic{
+    max-height: 5rem;
+    max-width: 5rem;
+    border-radius: 50%;
+    background-color: blue;
+    border: 0.1rem solid white;
+    display: inline-block;
+}
+
+.profilebg col{
+    padding: 0;
+}
